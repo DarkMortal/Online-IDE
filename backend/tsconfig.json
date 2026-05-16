@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    // File Layout
+    "rootDir": "./src", // Root directory of input files
+    "outDir": "./backend.build", // Output directory for compiled files
+    
+    // Environment Settings
+    "module": "nodenext", // Module system for Node.js with ESM support
+    "target": "es2020", // ECMAScript version for output
+    "types": ["node"], // Include type definitions from @types/node
+    "moduleResolution": "nodenext", // Module resolution strategy for Node.js ESM
+    
+    // Other Outputs
+    "sourceMap": true, // Generate .map files for debugging
+    "declaration": true, // Generate .d.ts type declaration files
+    "declarationMap": true, // Generate source maps for .d.ts files
+    
+    // Stricter Typechecking Options
+    "noUncheckedIndexedAccess": true, // Adds undefined to indexed access types
+    "exactOptionalPropertyTypes": false, // Optional property types are exactly as written
+    "allowUnreachableCode": false, // Error on unreachable code
+    "allowUnusedLabels": false, // Error on unused labels
+    
+    // Style Options
+    // "noImplicitReturns": true, // Error if not all code paths return a value
+    // "noImplicitOverride": true, // Require override keyword for overridden methods
+    "noUnusedLocals": true, // Error on unused local variables
+    "noUnusedParameters": true, // Error on unused function parameters
+    "noFallthroughCasesInSwitch": true, // Error on fallthrough in switch cases
+    
+    // "noPropertyAccessFromIndexSignature": true, // Disallow property access from index signatures
+    // Recommended Options
+    "strict": true, // Enable all strict type-checking options
+    "jsx": "react-jsx", // Use the new JSX transform (React 17+)
+    "verbatimModuleSyntax": false, // Rewrite import/export syntax for compatibility
+    "isolatedModules": true, // Ensure each file can be transpiled in isolation
+    "noUncheckedSideEffectImports": true, // Warn on imports with possible side effects
+    "moduleDetection": "force", // Force module detection for all files
+    "skipLibCheck": true, // Skip type checking of declaration files
+  }
+}

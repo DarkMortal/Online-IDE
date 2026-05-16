@@ -1,0 +1,20 @@
+.code-editor {
+    position: relative;
+    font-family: var(--editor-font);
+    font-size: var(--editor-font-size);
+    line-height: var(--editor-line-height);
+    border-radius: 6px;
+    border-top-right-radius: 0;
+    overflow: hidden;
+    /* Fixed height — content scrolls inside */
+    height: 60vh;
+    min-height: 300px;
+}
+
+@media (max-width: 768px) {
+    .code-editor {
+        height: auto;
+        min-height: unset;
+        aspect-ratio: 1 / 1;
+    }
+}

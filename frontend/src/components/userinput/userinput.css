@@ -1,0 +1,7 @@
+@media (max-width: 768px) {
+    .input-textarea {
+        height: auto !important;
+        min-height: unset !important;
+        aspect-ratio: 1 / 1;
+    }
+}

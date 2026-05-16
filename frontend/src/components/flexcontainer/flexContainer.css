@@ -1,0 +1,20 @@
+.w-full {
+  width: 100%;
+}
+.h-full {
+  height: 100%;
+}
+/* Equal-width flex column used for the 50-50 editor split */
+.editor-col {
+  min-width: 0;
+}
+.editor-col--primary  { flex: 7 1 0; margin-bottom: 10px; }
+.editor-col--secondary { flex: 3 1 0; margin-bottom: 10px; }
+
+/* On narrow screens the two columns stack vertically */
+@media (max-width: 768px) {
+  .editor-col--primary,
+  .editor-col--secondary {
+    flex: 1 1 100%;
+  }
+}

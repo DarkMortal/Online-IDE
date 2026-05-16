@@ -1,0 +1,21 @@
+{
+  "name": "ide-backend",
+  "version": "1.0.0",
+  "description": "A simple IDE backend API built with Express and TypeScript.",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "build": "tsc && cp src/compiler/Command.py backend.build/compiler/",
+    "start": "node backend.build/server.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "uuid": "^14.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.6.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^6.0.3"
+  }
+}
