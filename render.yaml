@@ -1,9 +1,8 @@
 services:
-  - type: web
-    name: compiler-service
-    env: image
-    plan: starter
+  - type: web # Can be web, worker, private, or cron
+    name: online-ide-service
+    runtime: image # Required for prebuilt images
     image:
-      repo: docker.io/darkmortal69/onlineide:infinity
-    # For image envs, Render reads the port exposed by the Dockerfile, 
-    # but if you need to override or explicitly state it, it belongs under 'image'
+      url: docker.io/darkmortal69/onlineide:infinity
+    plan: free # e.g., free, starter, standard
+    region: ohio # Service region
