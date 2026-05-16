@@ -52,8 +52,6 @@ export function compile(
         try {
             fs.writeFileSync(`./Files/${jobID + ext}`, code);
 
-            //console.log('File created successfully');
-
             Execute(lang, inputs, jobID)
                 .then((res) => resolve([res, [jobID, ext]]))
                 .catch((err) => reject([err, [jobID, ext]]));

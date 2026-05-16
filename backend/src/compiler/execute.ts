@@ -30,7 +30,6 @@ export function Execute(
         }
 
         command += ` ${jobID}`;
-        //console.log(command);
 
         exec(command, execOptions, (err, stdout, stderr) => {
             if (stdout)

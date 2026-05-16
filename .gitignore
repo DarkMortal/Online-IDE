@@ -2,3 +2,4 @@ backend.build
 frontend.build
 yarn.lock
 frontend.old
+node_modules
