@@ -26,7 +26,7 @@ export function Execute(
 
         if (inputs && inputs.length > 0) {
             for (let i = 0; i < inputs.length; i++)
-                command += ` ${inputs[i]!.toString()}`;
+                command += ` "${inputs[i]!.toString()}"`;
         }
 
         command += ` ${jobID}`;
