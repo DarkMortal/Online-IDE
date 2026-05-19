@@ -3,6 +3,6 @@ services:
     name: online-ide-service
     runtime: image # Required for prebuilt images
     image:
-      url: docker.io/darkmortal69/onlineide:infinity
+      url: docker.io/darkmortal69/onlineide@sha256:73816e5c7459a1afda63741956d7b8dfbeb80e99714a8284bc3cbb7d5d30adf9
     plan: free # e.g., free, starter, standard
     region: ohio # Service region
